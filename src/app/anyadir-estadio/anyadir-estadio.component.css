@@ -1,0 +1,13 @@
+.button-container button{
+    margin-top: 20px;
+    width: 250px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: medium;
+    font-weight: bold;
+  }

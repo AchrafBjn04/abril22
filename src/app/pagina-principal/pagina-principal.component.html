@@ -1,0 +1,27 @@
+<div class="button-anyadir">
+    <button (click)="mostrarFormularioAgregarEstadio()">Añadir estadio</button>
+</div>
+
+<div>
+    @if (mostrarFormulario) {
+        <app-anyadir-estadio (emitter)="anyadirEstadio($event)"></app-anyadir-estadio>
+    }
+</div>
+
+<h1>Estadios de fútbol</h1>
+
+<div class="estadio-container">
+    @for (estadio of listaEstadios; track $index) {
+        <h3>{{ estadio.nombre }}</h3>
+        <div class="info-container">
+            <img width="300px" [src]="estadio.urlImagen" [alt]="estadio.nombre">
+            <div class="direccion-container">
+                <div>
+                    <h4>Dirección: </h4>
+                    <label>{{ estadio.direccion }}</label>
+                    <button [routerLink]="['/estadio', estadio.id]">Mostrar más información</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>

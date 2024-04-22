@@ -1,0 +1,47 @@
+.estadio-container {
+    margin-bottom: 20px;
+  }
+  
+  .info-container {
+    background-color: skyblue;
+    width: 800px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .direccion-container {
+    margin-left: 20px;
+  }
+  
+  .direccion-container > div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  .info-container button {
+    margin-top: 20px;
+    margin-left: 95px;
+    width: 250px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-anyadir button{
+    margin-left: 400px;
+    width: 400px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: medium;
+    font-weight: bold;
+  }
